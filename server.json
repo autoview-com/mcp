@@ -12,15 +12,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://api.autoview.com/mcp/",
-      "headers": [
-        {
-          "name": "Authorization",
-          "description": "Bearer token, generate a personal access token at https://autoview.com/account/tokens/",
-          "isRequired": true,
-          "isSecret": true
-        }
-      ]
+      "url": "https://api.autoview.com/mcp/"
     }
   ]
 }
