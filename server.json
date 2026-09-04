@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.autoview-com/mcp",
+  "description": "Trade across 22+ exchanges and brokers from any MCP-capable AI agent, no install required.",
+  "title": "Autoview",
+  "websiteUrl": "https://autoview.com/",
+  "repository": {
+    "url": "https://github.com/autoview-com/mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.autoview.com/mcp/",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token, generate a personal access token at https://autoview.com/account/tokens/",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
